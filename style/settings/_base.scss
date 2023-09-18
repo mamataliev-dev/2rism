@@ -21,6 +21,10 @@ body.active {
 
 .section-title {
     font-weight: 600;
+
+    @media(max-width: 412px) {
+        max-width: 250px
+    }
 }
 
 .viewall {
