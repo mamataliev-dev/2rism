@@ -1,0 +1,45 @@
+.header {
+    padding-top: 32px;
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 54px;
+    border-bottom-right-radius: 54px;
+
+    &__content {
+        height: 700px;
+
+        @media(max-width: 768px) {
+            height: 500px;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_btn {
+            background: $violet;
+            padding: 27px 35px;
+            border-radius: 5px;
+            color: $white;
+
+            @media(max-width: 1280px) {
+                padding: 20px 27px;
+            }
+        }
+
+        &_title {
+            color: $white;
+        }
+    }
+
+    @media(max-width: 1280px) {
+        padding-top: 20px;
+    }
+
+    @media(max-width: 991px) {
+        border-bottom-left-radius: 34px;
+        border-bottom-right-radius: 34px;
+    }
+}

@@ -1,0 +1,63 @@
+.footer {
+    padding: 120px 0px;
+    background: $footer-bg;
+
+    &__row {
+        row-gap: 50px;
+
+        @media(max-width: 540px) {
+            flex-direction: column;
+        }
+    }
+
+    &__social {
+        column-gap: 15px;
+
+        &_icon {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    &__logo_slogan {
+        color: $gray;
+    }
+
+    &__link {
+        color: $gray !important;
+    }
+
+    &__col {
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: 540px) {
+            justify-content: start;
+        }
+    }
+
+
+    &__feedback {
+        &_input {
+            width: 300px;
+            padding: 16px;
+            border-radius: 12px;
+            background: $white;
+            position: relative;
+        }
+
+        &_btn {
+            padding: 28px;
+            border-radius: 12px;
+            background: $violet;
+
+            @media(max-width: 1280px) {
+                padding: 18px;
+            }
+        }
+
+        &_title {
+            max-width: 388px;
+        }
+    }
+}

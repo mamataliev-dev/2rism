@@ -1,0 +1,51 @@
+.my-nav {
+    &__link {
+        color: $white !important;
+        font-size: 14px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $gray !important;
+        }
+    }
+
+    &__list {
+        column-gap: 24px;
+
+        @media(max-width: 1280px) {
+            column-gap: 14px;
+        }
+    }
+
+    &__user_bio {
+        color: $gray;
+    }
+
+    &__user_name {
+        font-weight: 500;
+        color: $white;
+    }
+
+    &__user_img {
+        width: 48px;
+        height: 48px;
+    }
+
+    &_sp {
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &_sm {
+        display: none;
+
+        @media(max-width: 991px) {
+            display: block;
+        }
+    }
+}
+
+.nav-link.active {
+    font-size: 20px;
+}

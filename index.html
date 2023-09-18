@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./img/icons/logo-white.svg">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>2rism</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header margin">
+        <!-- Navbar -->
+        <nav class="my-nav navbar navbar-expand-lg navbar-light bg-none">
+            <div class="container-xl">
+                <a class="my-nav__brand navbar-brand" href="#">
+                    <img src="./img/icons/logo-white.svg" alt="">
+                </a>
+
+                <button class="my-nav__btn navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./img/icons/menuburger-icon.svg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="my-nav__list navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="my-nav__link nav-link active" aria-current="page" href="#">home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="my-nav__link nav-link active" aria-current="page" href="#">hotels</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="my-nav__link nav-link active" aria-current="page" href="#">restaurants</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="my-nav__link nav-link active" aria-current="page" href="#">tours</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="my-nav__link nav-link active" aria-current="page" href="#">destinations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="my-nav__link nav-link active" aria-current="page" href="#">activities</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="my-nav__link nav-link active" aria-current="page" href="#">contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="my-nav_sp ms-auto">
+                        <div class="my-nav__user d-flex align-items-center">
+                            <div class="my-nav__user_txt d-flex flex-column align-items-end">
+                                <span class="my-nav__user_bio">Holla,</span>
+                                <span class="my-nav__user_name">Ales Nesetril</span>
+                            </div>
+
+                            <button>
+                                <img class="my-nav__user_img ms-3" src="./img/user-photo.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="my-nav_sm">
+                        <div class="my-nav__user-mobile ms-auto d-flex align-items-center">
+                            <button>
+                                <img class="my-nav__user_img me-3" src="./img/user-photo.png" alt="">
+                            </button>
+
+                            <div class="my-nav__user_txt d-flex">
+                                <span class="my-nav__user_bio">Holla,</span>
+                                <span class="my-nav__user_name">Ales Nesetril</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="header__content">
+            <div class="container-xxl">
+                <div class="row flex-column">
+                    <div class="col">
+                        <h1 class="header__content_title h1 text-center">Discover the most engaging places</h1>
+                    </div>
+
+                    <div class="col d-flex justify-content-center mt-4">
+                        <button class="header__content_btn">Discover on 3D Globe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- About -->
+        <section class="about margin">
+            <div class="container-xl">
+                <div class="about__row row">
+                    <div class="about__txt col">
+                        <div class="about__txt">
+                            <h3 class="about__title h3 mb-4">About Us</h3>
+                            <p class="about__subtitle mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo.
+                                Nulla
+                                facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta
+                                consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per
+                                conubia
+                                nostra, per inceptos himenaeos.
+                            </p>
+
+                            <button class="hotels_viewall viewall">
+                                <span>Read more</span>
+                                <img src="./img/icons/move.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="about__img-box col">
+                        <img class="about__img" src="./img/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations -->
+        <section class="popular margin">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col box-margin">
+                        <h3 class="popular__title section-title h3">Popular Destinations</h3>
+                    </div>
+
+                    <div class="popular__row">
+                        <div class="popular__item">
+                            <img class="popular__img mb-2" src="./img/popular1.jpg" alt="">
+
+                            <div class="popular__txt d-flex flex-column">
+                                <span class="popular__name">Big Sur</span>
+                                <span class="popular__place">California, USA</span>
+                            </div>
+                        </div>
+
+                        <div class="popular__item">
+                            <img class="popular__img mb-2" src="./img/popular2.jpg" alt="">
+
+                            <div class="popular__txt d-flex flex-column">
+                                <span class="popular__name">Prescott</span>
+                                <span class="popular__place">Arizona, USA</span>
+                            </div>
+                        </div>
+
+                        <div class="popular__item">
+                            <img class="popular__img mb-2" src="./img/popular3.jpg" alt="">
+
+                            <div class="popular__txt d-flex flex-column">
+                                <span class="popular__name">Fort Mayers</span>
+                                <span class="popular__place">Florida, USA</span>
+                            </div>
+                        </div>
+
+                        <div class="popular__item">
+                            <img class="popular__img mb-2" src="./img/popular4.jpg" alt="">
+
+                            <div class="popular__txt d-flex flex-column">
+                                <span class="popular__name">Tucson</span>
+                                <span class="popular__place">Arizona, USA</span>
+                            </div>
+                        </div>
+
+                        <div class="popular__item">
+                            <img class="popular__img mb-2" src="./img/popular5.jpg" alt="">
+
+                            <div class="popular__txt d-flex flex-column">
+                                <span class="popular__name">St. Joseph</span>
+                                <span class="popular__place">Michigan, USA</span>
+                            </div>
+                        </div>
+
+                        <div class="popular__item">
+                            <img class="popular__img mb-2" src="./img/popular6.jpg" alt="">
+
+                            <div class="popular__txt d-flex flex-column">
+                                <span class="popular__name">Madrid</span>
+                                <span class="popular__place">Spain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotels and Restaurants -->
+        <section class="hotels margin">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col d-flex align-content-center justify-content-between box-margin">
+                        <h3 class="popular__title section-title h3">Hotels and Restaurants</h3>
+
+                        <button class="hotels_viewall viewall">
+                            <span>Veiw all</span>
+                            <img src="./img/icons/move.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="hotels__row">
+                        <div class="hotels__item">
+                            <div class="hotels__item d-flex flex-column">
+                                <img class="hotels__img mb-2" src="./img/hotels1.jpg" alt="">
+
+                                <span class="hotels__name section-title">Monastero Santa Rosa Hotel</span>
+
+                                <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                    <div class="hotels__rating_location">
+                                        <img class="hotels__rating_icon me-1" src="./img/icons/location.svg" alt="">
+                                        <span class="hotels__rating_place">Salerno, Italy</span>
+                                    </div>
+
+                                    <div class="hotels__rating_stars d-flex">
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hotels__item">
+                            <div class="hotels__item d-flex flex-column">
+                                <img class="hotels__img mb-2" src="./img/hotels2.jpg" alt="">
+
+                                <span class="hotels__name section-title">Grand Hotel Tremezzo</span>
+
+                                <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                    <div class="hotels__rating_location">
+                                        <img class="hotels__rating_icon me-1" src="./img/icons/location.svg" alt="">
+                                        <span class="hotels__rating_place">Lake Como, Italy</span>
+                                    </div>
+
+                                    <div class="hotels__rating_stars d-flex">
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hotels__item">
+                            <div class="hotels__item d-flex flex-column">
+                                <img class="hotels__img mb-2" src="./img/hotels3.jpg" alt="">
+
+                                <span class="hotels__name section-title">The Oberoi Udaivilas, Udaipur</span>
+
+                                <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                    <div class="hotels__rating_location">
+                                        <img class="hotels__rating_icon me-1" src="./img/icons/location.svg" alt="">
+                                        <span class="hotels__rating_place">Udaipur, India</span>
+                                    </div>
+
+                                    <div class="hotels__rating_stars d-flex">
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hotels__item">
+                            <div class="hotels__item d-flex flex-column">
+                                <img class="hotels__img mb-2" src="./img/hotels4.jpg" alt="">
+
+                                <span class="hotels__name section-title">AKA Beverly Hills</span>
+
+                                <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                    <div class="hotels__rating_location">
+                                        <img class="hotels__rating_icon me-1" src="./img/icons/location.svg" alt="">
+                                        <span class="hotels__rating_place">Los Angeles, US</span>
+                                    </div>
+
+                                    <div class="hotels__rating_stars d-flex">
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                        <button class="hotels__rating_star">
+                                            <img src="./img/icons/star.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Row -->
+                    <div class="hotels__row-mobile">
+                        <div class="swiper hotelsSwiper">
+                            <div class="hotels__swiper-wrapper swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hotels__item d-flex flex-column">
+                                        <img class="hotels__img mb-2" src="./img/hotels1.jpg" alt="">
+
+                                        <span class="hotels__name section-title">Monastero Santa Rosa Hotel & Spa</span>
+
+                                        <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                            <div class="hotels__rating_location">
+                                                <img class="hotels__rating_icon me-1" src="./img/icons/location.svg"
+                                                    alt="">
+                                                <span class="hotels__rating_place">Salerno, Italy</span>
+                                            </div>
+
+                                            <div class="hotels__rating_stars d-flex">
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="hotels__item d-flex flex-column">
+                                        <img class="hotels__img mb-2" src="./img/hotels2.jpg" alt="">
+
+                                        <span class="hotels__name section-title">Grand Hotel Tremezzo</span>
+
+                                        <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                            <div class="hotels__rating_location">
+                                                <img class="hotels__rating_icon me-1" src="./img/icons/location.svg"
+                                                    alt="">
+                                                <span class="hotels__rating_place">Lake Como, Italy</span>
+                                            </div>
+
+                                            <div class="hotels__rating_stars d-flex">
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="hotels__item d-flex flex-column">
+                                        <img class="hotels__img mb-2" src="./img/hotels3.jpg" alt="">
+
+                                        <span class="hotels__name section-title">The Oberoi Udaivilas, Udaipur</span>
+
+                                        <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                            <div class="hotels__rating_location">
+                                                <img class="hotels__rating_icon me-1" src="./img/icons/location.svg"
+                                                    alt="">
+                                                <span class="hotels__rating_place">Udaipur, India</span>
+                                            </div>
+
+                                            <div class="hotels__rating_stars d-flex">
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="hotels__item d-flex flex-column">
+                                        <img class="hotels__img mb-2" src="./img/hotels4.jpg" alt="">
+
+                                        <span class="hotels__name section-title">AKA Beverly Hills</span>
+
+                                        <div class="hotels__rating mt-2 d-flex justify-content-between">
+                                            <div class="hotels__rating_location">
+                                                <img class="hotels__rating_icon me-1" src="./img/icons/location.svg"
+                                                    alt="">
+                                                <span class="hotels__rating_place">Los Angeles, US</span>
+                                            </div>
+
+                                            <div class="hotels__rating_stars d-flex">
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                                <button class="hotels__rating_star">
+                                                    <img src="./img/icons/star.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hotels__swiper-button-next swiper-button-next"></div>
+                            <div class="hotels__swiper-button-prev swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips and Advice -->
+        <section class="tips margin">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col d-flex align-content-center justify-content-between box-margin">
+                        <h3 class="popular__title section-title h3">Travel Tips and Advice</h3>
+
+                        <button class="hotels_viewall viewall">
+                            <span>Veiw all</span>
+                            <img src="./img/icons/move.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="tips__row row">
+                        <div class="col">
+                            <div class="tips__item d-flex">
+                                <img class="tips__img me-3" src="./img/tips1.jpg" alt="">
+
+                                <div class="tips__cont d-flex flex-column justify-content-between">
+                                    <h4 class="tips__title section-title h4">East Village Ice Cream Crawl</h4>
+                                    <p class="tips__desc">
+                                        We will stop at five different world-class ice cream shops on this
+                                        1.5 mile 1.5 hour tour. At each ice cream store we'll explore the story behind
+                                        the
+                                        business and see what makes the ice cream unique as you savor every…
+                                    </p>
+
+                                    <div class="tips__cont_info d-flex">
+                                        <div class="tips__cont_box me-3">
+                                            <img class="tips__cont_icon ms-2" src="./img/icons/t-calendar.svg" alt="">
+                                            <span class="tips__cont_text">Today</span>
+                                        </div>
+
+                                        <div class="tips__cont_box me-3">
+                                            <img class="tips__cont_icon ms-2" src="./img/icons/t-user.svg" alt="">
+                                            <span class="tips__cont_text">Maria Philips</span>
+                                        </div>
+
+                                        <div class="tips__cont_box">
+                                            <img class="tips__cont_icon ms-2" src="./img/icons/t-comment.svg" alt="">
+                                            <span class="tips__cont_text">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="tips__item d-flex">
+                                <img class="tips__img me-3" src="./img/tips2.jpg" alt="">
+
+                                <div class="tips__cont d-flex flex-column justify-content-between">
+                                    <h4 class="tips__title section-title h4">Brooklyn Bridge cinematic photo walk</h4>
+                                    <p class="tips__desc">
+                                        This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but
+                                        I'm always open to capture clients at different locations upon request for an
+                                        additional charge.
+                                    </p>
+
+                                    <div class="tips__cont_info d-flex">
+                                        <div class="tips__cont_box me-3">
+                                            <img class="tips__cont_icon" src="./img/icons/t-calendar.svg" alt="">
+                                            <span class="tips__cont_text">Today</span>
+                                        </div>
+
+                                        <div class="tips__cont_box me-3">
+                                            <img class="tips__cont_icon" src="./img/icons/t-user.svg" alt="">
+                                            <span class="tips__cont_text">James Calzoni</span>
+                                        </div>
+
+                                        <div class="tips__cont_box">
+                                            <img class="tips__cont_icon" src="./img/icons/t-comment.svg" alt="">
+                                            <span class="tips__cont_text">17</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities -->
+        <section class="activities margin">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col d-flex align-content-center justify-content-between box-margin">
+                        <h3 class="popular__title section-title h3">Activities</h3>
+
+                        <button class="hotels_viewall viewall">
+                            <span>Veiw all</span>
+                            <img src="./img/icons/move.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="activities__row">
+                        <div class="activities__item">
+                            <img class="activities__img mb-2" src="./img/activities1.jpg" alt="">
+
+                            <span class="activities__name">Sailing</span>
+                        </div>
+
+                        <div class="activities__item">
+                            <img class="activities__img mb-2" src="./img/activities2.jpg" alt="">
+
+                            <span class="activities__name">Climbing</span>
+                        </div>
+
+                        <div class="activities__item">
+                            <img class="activities__img mb-2" src="./img/activities3.jpg" alt="">
+
+                            <span class="activities__name">Skiing</span>
+                        </div>
+
+                        <div class="activities__item">
+                            <img class="activities__img mb-2" src="./img/activities4.jpg" alt="">
+
+                            <span class="activities__name">Hiking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-xl">
+            <div class="footer__row row">
+                <!-- Logo -->
+                <div class="col">
+                    <div class="footer__logo">
+                        <img class="footer__logo_icon mb-2" src="./img/icons/logo.svg" alt="">
+                        <p class="footer__logo_slogan mb-4">
+                            We always make our customers happy by<br>
+                            providing as many choises as possible
+                        </p>
+
+                        <div class="footer__social d-flex align-items-center">
+                            <a href="#!">
+                                <img class="footer__social_icon" src="./img/icons/facebook.svg" alt="">
+                            </a>
+
+                            <a href="#!">
+                                <img class="footer__social_icon" src="./img/icons/instagram.svg" alt="">
+                            </a>
+
+                            <a href="#!">
+                                <img class="footer__social_icon" src="./img/icons/twitter.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Nav -->
+                <div class="col footer__col">
+                    <div class="footer__about">
+                        <div class="footer__about_title footer__title mb-3">About</div>
+
+                        <ul class="footer__list navbar-nav">
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Features</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">News</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Menu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Company Nav -->
+                <div class="col footer__col">
+                    <div class=" footer__company">
+                        <div class="footer__company_title footer__title mb-3">Company</div>
+
+                        <ul class="footer__list navbar-nav">
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Why 2rism</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Partner With Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">FAQ</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Support Nav -->
+                <div class="col footer__col">
+                    <div class="footer__support">
+                        <div class="footer__support_title footer__title mb-3">Support</div>
+
+                        <ul class="footer__list navbar-nav">
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Account</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Support Center</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Feedback</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="footer__link nav-link active" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FeedBack -->
+                <div class="col col-xl-4">
+                    <form class="footer__feedback">
+                        <div class="footer__feedback_title footer__title mb-3">
+                            Subscribe on our destination review
+                            newsletters
+                        </div>
+
+                        <div class="footer__feedback_ib d-flex">
+                            <input type="text" placeholder="Your Email" class="footer__feedback_input me-3">
+
+                            <button class="footer__feedback_btn">
+                                <img src="./img/icons/send.svg" alt="">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Swiper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

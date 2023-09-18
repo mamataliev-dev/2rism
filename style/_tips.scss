@@ -1,0 +1,55 @@
+.tips {
+    &__row {
+        row-gap: 30px;
+
+        @media(max-width: 1024px) {
+            flex-direction: column;
+        }
+
+        @media(max-width: 480px) {
+            row-gap: 40px;
+        }
+    }
+
+    &__item {
+        @media(max-width: 540px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        max-width: 316px;
+        max-height: 380px;
+        border-radius: 24px;
+
+        @media(max-width: 1280px) {
+            max-width: 300px;
+            max-height: 330px;
+        }
+
+        @media(max-width: 540px) {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        max-width: 316px;
+
+        @media(max-width: 1280px) {
+            max-width: 100%;
+        }
+    }
+
+    &__cont_text {
+        color: $gray;
+    }
+
+    &__desc {
+        max-width: 316px;
+
+        @media(max-width: 1280px) {
+            max-width: 100%;
+        }
+    }
+}

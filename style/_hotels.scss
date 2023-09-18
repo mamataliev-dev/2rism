@@ -1,0 +1,38 @@
+.hotels {
+    &__img {
+        border-radius: 24px;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+
+        @media(max-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media(max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width: 480px) {
+            display: none;
+        }
+    }
+
+    &__row-mobile {
+        display: none;
+
+        @media(max-width: 480px) {
+            display: block;
+        }
+    }
+
+    &__swiper-button-next:after,
+    &__swiper-button-prev:after {
+        font-size: 36px !important;
+        color: $violet;
+    }
+}
